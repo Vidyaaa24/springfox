@@ -13,6 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ plugins {
+  id "org.sonarqube" version "3.5.0.2730"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "Vidyaaa24_springfox"
+    property "sonar.organization", "vidyaaa24"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 apply plugin: 'groovy'
 apply plugin: 'idea'
 
